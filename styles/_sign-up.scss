@@ -1,0 +1,134 @@
+.signup-container {
+  @include flex(center, center, row);
+  height: 100vh;
+
+  .form-container {
+    padding: 5rem;
+
+    h3 {
+      font-weight: bold;
+      font-size: $header3;
+    }
+
+    h4 {
+      margin-top: 2rem;
+      font-size: $header2;
+    }
+
+    form {
+      @include flex(center, center, column);
+
+      label,
+      input {
+        align-self: flex-start;
+        margin-top: 1rem;
+      }
+
+      input {
+        width: 100%;
+        padding: 1rem;
+      }
+
+      label {
+        font-size: $header5;
+        font-weight: bold;
+      }
+
+      .password-input {
+        width: 100%;
+        align-self: flex-start;
+        @include flex(center, center, row);
+        position: relative;
+        input[type="password"] {
+          width: 100%;
+          padding: 1rem;
+        }
+        .hide-password {
+          position: absolute;
+          left: 90%;
+          top: 35%;
+          cursor: pointer;
+        }
+      }
+
+      .terms-conditions {
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+
+        input {
+          flex: 0.2;
+        }
+
+        p {
+          margin-left: 1rem;
+        }
+
+        .terms {
+          font-weight: bold;
+        }
+      }
+
+      button {
+        align-self: flex-start;
+        margin-top: 2rem;
+        width: 100%;
+        padding: 1.5rem 3rem;
+        background: $primary_blue_color;
+        border: none;
+        border-radius: 0.5rem;
+        color: $primary_white_color;
+        font-family: "Lato", sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: $header5;
+        transition: background 0.5s ease;
+
+        &:hover {
+          background: $primary_black_color;
+        }
+      }
+
+      .sign-in-account {
+        margin-top: 2rem;
+      }
+      .sign-in {
+        align-self: flex-start;
+        margin-top: 2rem;
+        text-align: center;
+        font-weight: bold;
+
+        a {
+          text-decoration: none;
+          color: $primary_blue_color;
+        }
+      }
+    }
+  }
+
+  .carousel {
+    @include flex(center, center, column);
+    background: $primary_blue_color;
+    padding: 5rem;
+    img {
+      max-width: 40vw;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .carousel-text {
+      text-align: center;
+
+      h3 {
+        font-size: $header3;
+        color: $primary_white_color;
+        margin-top: 1rem;
+      }
+
+      p {
+        margin-top: 1rem;
+        color: $primary_white_color;
+      }
+    }
+  }
+}

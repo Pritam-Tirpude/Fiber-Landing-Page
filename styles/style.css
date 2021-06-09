@@ -1,0 +1,1064 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  background: #fbf8f4;
+  min-height: 100vh;
+}
+
+nav {
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
+  margin: auto;
+}
+
+nav .logo {
+  margin-right: auto;
+}
+
+nav .logo a {
+  text-decoration: none;
+  color: black;
+  font-size: 2.5rem;
+}
+
+nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 30%;
+  list-style: none;
+  margin-right: auto;
+  position: relative;
+}
+
+nav .nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+nav .nav-links a:hover {
+  color: #4d14d2;
+  -webkit-text-decoration: 2px solid underline;
+          text-decoration: 2px solid underline;
+  text-underline-offset: 1rem;
+}
+
+nav .register a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+nav .register a:hover {
+  color: #4d14d2;
+  -webkit-text-decoration: 2px solid underline;
+          text-decoration: 2px solid underline;
+  text-underline-offset: 1rem;
+}
+
+nav .register button {
+  margin-left: 2rem;
+  background: #4d14d2;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+nav .register button:hover {
+  background: black;
+  color: white;
+}
+
+nav .hamburger {
+  display: none;
+}
+
+.intro-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
+  margin: auto;
+}
+
+.intro-header .intro-left-side {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 60%;
+          flex: 1 0 60%;
+}
+
+.intro-header .intro-left-side .ratings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: auto;
+}
+
+.intro-header .intro-left-side .ratings .rating-text {
+  margin-left: 2rem;
+}
+
+.intro-header .intro-left-side .ratings .rating-text p {
+  font-weight: bold;
+}
+
+.intro-header .intro-left-side .intro-title h1 {
+  font-size: 6.5rem;
+  font-weight: bolder;
+}
+
+.intro-header .intro-left-side .intro-title p {
+  color: dimgray;
+}
+
+.intro-header .intro-left-side .get-started {
+  margin-top: 2rem;
+}
+
+.intro-header .intro-left-side .get-started button {
+  background: #4d14d2;
+  padding: 2rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+.intro-header .intro-left-side .get-started button:hover {
+  background: black;
+  color: white;
+}
+
+.intro-header .intro-left-side .get-started a {
+  margin-left: 2rem;
+  color: #4d14d2;
+  font-weight: bolder;
+  text-underline-offset: 1rem;
+}
+
+.intro-header .intro-left-side .get-started a:hover {
+  color: black;
+}
+
+.intro-header .intro-left-side .check-feature {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.intro-header .intro-left-side .check-feature .access-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.intro-header .intro-left-side .check-feature .access-one p {
+  margin-left: 1rem;
+  color: dimgray;
+}
+
+.intro-header .intro-left-side .check-feature .access-two {
+  margin-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.intro-header .intro-left-side .check-feature .access-two p {
+  margin-left: 1rem;
+  color: dimgray;
+}
+
+.intro-header .intro-right-side {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
+}
+
+.intro-header .intro-right-side img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-container {
+  width: 90%;
+  margin: auto;
+}
+
+.portfolio-benefits {
+  margin-top: 5rem;
+}
+
+.portfolio-benefits .benefit-title h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #4d14d2;
+}
+
+.portfolio-benefits .benefit-title h4 {
+  margin-top: 2rem;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.portfolio-benefits .benefit-features {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.portfolio-benefits .benefit-features .minute-feature h5 {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.portfolio-benefits .benefit-features .minute-feature p {
+  margin-top: 1rem;
+  color: dimgray;
+}
+
+.portfolio-benefits .benefit-features .css-feature h5 {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.portfolio-benefits .benefit-features .css-feature p {
+  margin-top: 1rem;
+  color: dimgray;
+}
+
+.portfolio-benefits .benefit-features .responsive-feature h5 {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.portfolio-benefits .benefit-features .responsive-feature p {
+  margin-top: 1rem;
+  color: dimgray;
+}
+
+.diversify-section {
+  margin: auto;
+  padding: 3rem 3rem;
+  margin-top: 10rem;
+  background: #4d14d2;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.diversify-section .diversify-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
+}
+
+.diversify-section .diversify-text h3 {
+  font-size: 3.5rem;
+  color: white;
+}
+
+.diversify-section .diversify-text p {
+  color: white;
+}
+
+.diversify-section .diversify-text button {
+  margin-top: 2rem;
+  background: white;
+  padding: 2rem 3rem;
+  color: #4d14d2;
+  border: none;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+.diversify-section .diversify-text button:hover {
+  background: black;
+  color: white;
+}
+
+.diversify-section .diversify-image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  position: relative;
+  top: 33px;
+  bottom: 0px;
+}
+
+.diversify-section .diversify-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 10rem;
+}
+
+.cards .card {
+  width: 350px;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  border: 2px solid #cacaca;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 2rem 2rem;
+}
+
+.cards .card .avatar-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.cards .card .avatar-info .names-detail {
+  margin-left: 2rem;
+}
+
+.cards .card h5 {
+  color: #4d14d2;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.cards .card .revenue {
+  font-size: small;
+  font-weight: bold;
+}
+
+.cards .card .comment {
+  margin-top: 2rem;
+  color: dimgray;
+}
+
+.cards .card button {
+  margin-top: 2rem;
+  border: 2px solid #cacaca;
+  padding: 1rem;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4d14d2;
+  cursor: pointer;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+.cards .card button:hover {
+  background: #4d14d2;
+  color: white;
+}
+
+.footer-container {
+  margin-top: 10rem;
+  min-height: 50vh;
+  background: #fbf8f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer-container .footer-content {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer-container .footer-content .logo-footer {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+.footer-container .footer-content .logo-footer a {
+  color: black;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-container .footer-content .logo-footer p {
+  margin-top: 1rem;
+  color: dimgray;
+}
+
+.footer-container .footer-content .logo-footer .heart {
+  color: dimgray;
+}
+
+.footer-container .footer-content .sitemap h5 {
+  font-size: 1.5rem;
+}
+
+.footer-container .footer-content .sitemap .sitemap-links {
+  list-style: none;
+}
+
+.footer-container .footer-content .sitemap .sitemap-links a {
+  text-decoration: none;
+  margin-top: 1rem;
+  color: dimgray;
+}
+
+.footer-container .footer-content .sitemap .sitemap-links a:hover {
+  color: #4d14d2;
+  -webkit-text-decoration: 2px solid #4d14d2 underline;
+          text-decoration: 2px solid #4d14d2 underline;
+  text-underline-offset: 0.5rem;
+}
+
+.footer-container .footer-content .sitemap .sitemap-links li {
+  margin-top: 1rem;
+}
+
+.footer-container .footer-content .resources {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+.footer-container .footer-content .resources h5 {
+  font-size: 1.5rem;
+}
+
+.footer-container .footer-content .resources .resources-links {
+  list-style: none;
+}
+
+.footer-container .footer-content .resources .resources-links a {
+  text-decoration: none;
+  margin-top: 1rem;
+  color: dimgray;
+}
+
+.footer-container .footer-content .resources .resources-links a:hover {
+  color: #4d14d2;
+  -webkit-text-decoration: 2px solid #4d14d2 underline;
+          text-decoration: 2px solid #4d14d2 underline;
+  text-underline-offset: 0.5rem;
+}
+
+.footer-container .footer-content .resources .resources-links li {
+  margin-top: 1rem;
+}
+
+.footer-container .footer-content .company {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+.footer-container .footer-content .company h5 {
+  font-size: 1.5rem;
+}
+
+.footer-container .footer-content .company .company-links {
+  list-style: none;
+}
+
+.footer-container .footer-content .company .company-links a {
+  text-decoration: none;
+  margin-top: 1rem;
+  color: dimgray;
+}
+
+.footer-container .footer-content .company .company-links a:hover {
+  color: #4d14d2;
+  -webkit-text-decoration: 2px solid #4d14d2 underline;
+          text-decoration: 2px solid #4d14d2 underline;
+  text-underline-offset: 0.5rem;
+}
+
+.footer-container .footer-content .company .company-links li {
+  margin-top: 1rem;
+}
+
+.footer-container .footer-content .portfolios {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+.footer-container .footer-content .portfolios h5 {
+  font-size: 1.5rem;
+}
+
+.footer-container .footer-content .portfolios .portfolios-links {
+  list-style: none;
+}
+
+.footer-container .footer-content .portfolios .portfolios-links a {
+  text-decoration: none;
+  margin-top: 1rem;
+  color: dimgray;
+}
+
+.footer-container .footer-content .portfolios .portfolios-links a:hover {
+  color: #4d14d2;
+  -webkit-text-decoration: 2px solid #4d14d2 underline;
+          text-decoration: 2px solid #4d14d2 underline;
+  text-underline-offset: 0.5rem;
+}
+
+.footer-container .footer-content .portfolios .portfolios-links li {
+  margin-top: 1rem;
+}
+
+.signup-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100vh;
+}
+
+.signup-container .form-container {
+  padding: 5rem;
+}
+
+.signup-container .form-container h3 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.signup-container .form-container h4 {
+  margin-top: 2rem;
+  font-size: 3.5rem;
+}
+
+.signup-container .form-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.signup-container .form-container form label,
+.signup-container .form-container form input {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 1rem;
+}
+
+.signup-container .form-container form input {
+  width: 100%;
+  padding: 1rem;
+}
+
+.signup-container .form-container form label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.signup-container .form-container form .password-input {
+  width: 100%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.signup-container .form-container form .password-input input[type="password"] {
+  width: 100%;
+  padding: 1rem;
+}
+
+.signup-container .form-container form .password-input .hide-password {
+  position: absolute;
+  left: 90%;
+  top: 35%;
+  cursor: pointer;
+}
+
+.signup-container .form-container form .terms-conditions {
+  margin-top: 2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.signup-container .form-container form .terms-conditions input {
+  -webkit-box-flex: 0.2;
+      -ms-flex: 0.2;
+          flex: 0.2;
+}
+
+.signup-container .form-container form .terms-conditions p {
+  margin-left: 1rem;
+}
+
+.signup-container .form-container form .terms-conditions .terms {
+  font-weight: bold;
+}
+
+.signup-container .form-container form button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 2rem;
+  width: 100%;
+  padding: 1.5rem 3rem;
+  background: #4d14d2;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.5rem;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+.signup-container .form-container form button:hover {
+  background: black;
+}
+
+.signup-container .form-container form .sign-in-account {
+  margin-top: 2rem;
+}
+
+.signup-container .form-container form .sign-in {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.signup-container .form-container form .sign-in a {
+  text-decoration: none;
+  color: #4d14d2;
+}
+
+.signup-container .carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #4d14d2;
+  padding: 5rem;
+}
+
+.signup-container .carousel img {
+  max-width: 40vw;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.signup-container .carousel .carousel-text {
+  text-align: center;
+}
+
+.signup-container .carousel .carousel-text h3 {
+  font-size: 2.5rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+.signup-container .carousel .carousel-text p {
+  margin-top: 1rem;
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    position: relative;
+  }
+  nav .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+    height: 100vh;
+    background: #4d14d2;
+    border-radius: 1rem;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+  }
+  nav .nav-links a {
+    color: white;
+  }
+  nav .nav-links a:hover {
+    color: black;
+  }
+  nav .nav-links.open {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  nav .register {
+    display: none;
+  }
+  nav .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .intro-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .intro-header .intro-left-side {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .intro-header .intro-left-side .ratings {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .intro-header .intro-left-side .check-feature {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .intro-header .intro-left-side .check-feature .access-two {
+    margin-top: 1rem;
+  }
+  .portfolio-benefits .benefit-title {
+    text-align: center;
+  }
+  .portfolio-benefits .benefit-features {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolio-benefits .benefit-features .minute-feature {
+    text-align: center;
+  }
+  .portfolio-benefits .benefit-features .css-feature {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .portfolio-benefits .benefit-features .responsive-feature {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .diversify-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .diversify-section .diversify-text button {
+    width: 100%;
+  }
+  .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cards .card {
+    margin-top: 2rem;
+  }
+  .footer-container {
+    min-height: 100vh;
+  }
+  .footer-container .footer-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3rem;
+  }
+  .footer-container .footer-content .logo-footer {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+  }
+  .footer-container .footer-content .sitemap {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .footer-container .footer-content .resources {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .footer-container .footer-content .company {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .footer-container .footer-content .portfolios {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .signup-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .signup-container .carousel {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

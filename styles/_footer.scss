@@ -1,0 +1,125 @@
+.footer-container {
+  margin-top: 10rem;
+  min-height: 50vh;
+  background: $primary_bg_color;
+  @include flex(center, center, row);
+
+  .footer-content {
+    width: 90%;
+    margin: auto;
+    @include flex(space-between, center, row);
+
+    .logo-footer {
+      align-self: baseline;
+      a {
+        color: $primary_black_color;
+        font-size: $header4;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      p {
+        margin-top: 1rem;
+        color: $primary_text_color;
+      }
+
+      .heart {
+        color: $primary_text_color;
+      }
+    }
+
+    .sitemap {
+      h5 {
+        font-size: $header5;
+      }
+      .sitemap-links {
+        list-style: none;
+        a {
+          text-decoration: none;
+          margin-top: 1rem;
+          color: $primary_text_color;
+
+          &:hover {
+            color: $primary_blue_color;
+            text-decoration: 2px solid $primary_blue_color underline;
+            text-underline-offset: 0.5rem;
+          }
+        }
+        li {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    .resources {
+      align-self: baseline;
+      h5 {
+        font-size: $header5;
+      }
+      .resources-links {
+        list-style: none;
+        a {
+          text-decoration: none;
+          margin-top: 1rem;
+          color: $primary_text_color;
+
+          &:hover {
+            color: $primary_blue_color;
+            text-decoration: 2px solid $primary_blue_color underline;
+            text-underline-offset: 0.5rem;
+          }
+        }
+        li {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    .company {
+      align-self: baseline;
+      h5 {
+        font-size: $header5;
+      }
+      .company-links {
+        list-style: none;
+        a {
+          text-decoration: none;
+          margin-top: 1rem;
+          color: $primary_text_color;
+
+          &:hover {
+            color: $primary_blue_color;
+            text-decoration: 2px solid $primary_blue_color underline;
+            text-underline-offset: 0.5rem;
+          }
+        }
+        li {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    .portfolios {
+      align-self: baseline;
+      h5 {
+        font-size: $header5;
+      }
+      .portfolios-links {
+        list-style: none;
+        a {
+          text-decoration: none;
+          margin-top: 1rem;
+          color: $primary_text_color;
+
+          &:hover {
+            color: $primary_blue_color;
+            text-decoration: 2px solid $primary_blue_color underline;
+            text-underline-offset: 0.5rem;
+          }
+        }
+        li {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}

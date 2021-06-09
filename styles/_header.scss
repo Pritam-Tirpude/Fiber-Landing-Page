@@ -1,0 +1,167 @@
+header {
+  background: $primary_bg_color;
+  min-height: 100vh;
+}
+
+nav {
+  min-height: 10vh;
+  @include flex(space-around, center, row);
+  width: 90%;
+  margin: auto;
+
+  .logo {
+    margin-right: auto;
+    a {
+      text-decoration: none;
+      color: $primary_black_color;
+      font-size: $header3;
+    }
+  }
+  .nav-links {
+    @include flex(space-around, center, row);
+    width: 30%;
+    list-style: none;
+    margin-right: auto;
+    position: relative;
+    a {
+      text-decoration: none;
+      color: $primary_black_color;
+
+      &:hover {
+        color: $primary_blue_color;
+        text-decoration: 2px solid underline;
+        text-underline-offset: 1rem;
+      }
+    }
+  }
+
+  .register {
+    a {
+      text-decoration: none;
+      color: $primary_black_color;
+      font-weight: bolder;
+
+      &:hover {
+        color: $primary_blue_color;
+        text-decoration: 2px solid underline;
+        text-underline-offset: 1rem;
+      }
+    }
+
+    button {
+      margin-left: 2rem;
+      background: $primary_blue_color;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      color: $primary_white_color;
+      font-family: "Lato", sans-serif;
+      font-weight: bold;
+      transition: background 0.5s ease;
+
+      &:hover {
+        background: $primary_black_color;
+        color: $primary_white_color;
+      }
+    }
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+.intro-header {
+  @include flex(center, center, row);
+  width: 90%;
+  margin: auto;
+
+  .intro-left-side {
+    flex: 1 0 60%;
+
+    .ratings {
+      @include flex(flex-start, center, row);
+      margin-left: auto;
+
+      .rating-text {
+        margin-left: 2rem;
+        p {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .intro-title {
+      h1 {
+        font-size: $header1;
+        font-weight: bolder;
+      }
+      p {
+        color: $primary_text_color;
+      }
+    }
+
+    .get-started {
+      margin-top: 2rem;
+
+      button {
+        background: $primary_blue_color;
+        padding: 2rem 2rem;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        color: $primary_white_color;
+        font-family: "Lato", sans-serif;
+        font-weight: bold;
+        transition: background 0.5s ease;
+
+        &:hover {
+          background: $primary_black_color;
+          color: $primary_white_color;
+        }
+      }
+
+      a {
+        margin-left: 2rem;
+        color: $primary_blue_color;
+        font-weight: bolder;
+        text-underline-offset: 1rem;
+
+        &:hover {
+          color: $primary_black_color;
+        }
+      }
+    }
+
+    .check-feature {
+      margin-top: 2rem;
+      @include flex(flex-start, center, row);
+      .access-one {
+        @include flex(flex-start, center, row);
+        p {
+          margin-left: 1rem;
+          color: $primary_text_color;
+        }
+      }
+      .access-two {
+        margin-left: 2rem;
+        @include flex(flex-start, center, row);
+
+        p {
+          margin-left: 1rem;
+          color: $primary_text_color;
+        }
+      }
+    }
+  }
+
+  .intro-right-side {
+    flex: 1 0 40%;
+    img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
